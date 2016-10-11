@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- This is list of customers -->
+<customers>
+  <customer ID="C001">
+    <name>Acme Inc.</name>
+    <phone>12345</phone>
+    <comments>
+      <![CDATA[Regular customer since 1995]]>
+    </comments>
+  </customer>
+  <customer ID="C002">
+    <name>Star Wars Inc.</name>
+    <phone>23456</phone>
+    <comments>
+      <![CDATA[A small but healthy company.]]>
+    </comments>
+  </customer>
+</customers>

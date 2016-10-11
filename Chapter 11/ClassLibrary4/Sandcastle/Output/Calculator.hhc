@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML/EN">
+<HTML>
+  <BODY>
+    <UL>
+<LI><OBJECT type="text/sitemap">
+  <param name="Name" value="Namespaces">
+  <param name="Local" value="html\d4648875-d41a-783b-d5f4-638df39ee413.htm">
+</OBJECT></LI>
+<UL>
+<LI><OBJECT type="text/sitemap">
+  <param name="Name" value="Calculator Namespace">
+  <param name="Local" value="html\bb2db7d1-c9e4-4dcc-1bb1-37ab7900f6fa.htm">
+</OBJECT></LI>
+<UL>
+<LI><OBJECT type="text/sitemap">
+  <param name="Name" value="SimpleCalculator Class">
+  <param name="Local" value="html\7138618f-fb63-176b-a410-5732613aa734.htm">
+</OBJECT></LI>
+<UL>
+<LI><OBJECT type="text/sitemap">
+  <param name="Name" value="SimpleCalculator Constructor">
+  <param name="Local" value="html\5b7d0d63-2f82-6374-b3f3-1c1a11cd03d1.htm">
+</OBJECT></LI>
+<LI><OBJECT type="text/sitemap">
+  <param name="Name" value="Add Method">
+  <param name="Local" value="html\597f9750-ed54-3d0b-43e7-830ea2adf334.htm">
+</OBJECT></LI>
+<LI><OBJECT type="text/sitemap">
+  <param name="Name" value="Divide Method">
+  <param name="Local" value="html\7ace8f22-567c-3704-436b-d8178ddb3fa9.htm">
+</OBJECT></LI>
+<LI><OBJECT type="text/sitemap">
+  <param name="Name" value="Multiply Method">
+  <param name="Local" value="html\340fe8b1-2d59-3d57-9584-b321ef6230f7.htm">
+</OBJECT></LI>
+<LI><OBJECT type="text/sitemap">
+  <param name="Name" value="Subtract Method">
+  <param name="Local" value="html\bc21fd48-e4be-8a49-c74c-21054ea9cb28.htm">
+</OBJECT></LI>
+</UL>
+</UL>
+</UL>
+    </UL>
+  </BODY>
+</HTML>

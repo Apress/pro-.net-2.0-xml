@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorldAgain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorldAgainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldAgainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BufferMyResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="BufferMyResponseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BufferMyResponseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CacheMe">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CacheMeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CacheMeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PutNameInSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PutNameInSessionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetNameFromSession">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetNameFromSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNameFromSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteMeInTransaction">
+        <s:complexType />
+      </s:element>
+      <s:element name="ExecuteMeInTransactionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DescribeMe">
+        <s:complexType />
+      </s:element>
+      <s:element name="DescribeMeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DescribeMeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployees">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetEmployeesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployee">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetEmployeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeResult" type="tns:Employee" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Employee">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="EmployeeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HomePhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Notes" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldAgainSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorldAgain" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldAgainSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldAgainResponse" />
+  </wsdl:message>
+  <wsdl:message name="BufferMyResponseSoapIn">
+    <wsdl:part name="parameters" element="tns:BufferMyResponse" />
+  </wsdl:message>
+  <wsdl:message name="BufferMyResponseSoapOut">
+    <wsdl:part name="parameters" element="tns:BufferMyResponseResponse" />
+  </wsdl:message>
+  <wsdl:message name="CacheMeSoapIn">
+    <wsdl:part name="parameters" element="tns:CacheMe" />
+  </wsdl:message>
+  <wsdl:message name="CacheMeSoapOut">
+    <wsdl:part name="parameters" element="tns:CacheMeResponse" />
+  </wsdl:message>
+  <wsdl:message name="PutNameInSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:PutNameInSession" />
+  </wsdl:message>
+  <wsdl:message name="PutNameInSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:PutNameInSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNameFromSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNameFromSession" />
+  </wsdl:message>
+  <wsdl:message name="GetNameFromSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNameFromSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteMeInTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteMeInTransaction" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteMeInTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteMeInTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DescribeMeSoapIn">
+    <wsdl:part name="parameters" element="tns:DescribeMe" />
+  </wsdl:message>
+  <wsdl:message name="DescribeMeSoapOut">
+    <wsdl:part name="parameters" element="tns:DescribeMeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployees" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployee" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input name="HelloWorldAgain" message="tns:HelloWorldAgainSoapIn" />
+      <wsdl:output name="HelloWorldAgain" message="tns:HelloWorldAgainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BufferMyResponse">
+      <wsdl:input message="tns:BufferMyResponseSoapIn" />
+      <wsdl:output message="tns:BufferMyResponseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CacheMe">
+      <wsdl:input message="tns:CacheMeSoapIn" />
+      <wsdl:output message="tns:CacheMeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PutNameInSession">
+      <wsdl:input message="tns:PutNameInSessionSoapIn" />
+      <wsdl:output message="tns:PutNameInSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNameFromSession">
+      <wsdl:input message="tns:GetNameFromSessionSoapIn" />
+      <wsdl:output message="tns:GetNameFromSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteMeInTransaction">
+      <wsdl:input message="tns:ExecuteMeInTransactionSoapIn" />
+      <wsdl:output message="tns:ExecuteMeInTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DescribeMe">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This is description for web method</wsdl:documentation>
+      <wsdl:input message="tns:DescribeMeSoapIn" />
+      <wsdl:output message="tns:DescribeMeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployees">
+      <wsdl:input message="tns:GetEmployeesSoapIn" />
+      <wsdl:output message="tns:GetEmployeesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployee">
+      <wsdl:input message="tns:GetEmployeeSoapIn" />
+      <wsdl:output message="tns:GetEmployeeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorldAgain" style="document" />
+      <wsdl:input name="HelloWorldAgain">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HelloWorldAgain">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BufferMyResponse">
+      <soap:operation soapAction="http://tempuri.org/BufferMyResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CacheMe">
+      <soap:operation soapAction="http://tempuri.org/CacheMe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutNameInSession">
+      <soap:operation soapAction="http://tempuri.org/PutNameInSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNameFromSession">
+      <soap:operation soapAction="http://tempuri.org/GetNameFromSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteMeInTransaction">
+      <soap:operation soapAction="http://tempuri.org/ExecuteMeInTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DescribeMe">
+      <soap:operation soapAction="http://tempuri.org/DescribeMe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployees">
+      <soap:operation soapAction="http://tempuri.org/GetEmployees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployee">
+      <soap:operation soapAction="http://tempuri.org/GetEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorldAgain" style="document" />
+      <wsdl:input name="HelloWorldAgain">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HelloWorldAgain">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BufferMyResponse">
+      <soap12:operation soapAction="http://tempuri.org/BufferMyResponse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CacheMe">
+      <soap12:operation soapAction="http://tempuri.org/CacheMe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutNameInSession">
+      <soap12:operation soapAction="http://tempuri.org/PutNameInSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNameFromSession">
+      <soap12:operation soapAction="http://tempuri.org/GetNameFromSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteMeInTransaction">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteMeInTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DescribeMe">
+      <soap12:operation soapAction="http://tempuri.org/DescribeMe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployees">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployee">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://localhost:2273/Service/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://localhost:2273/Service/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

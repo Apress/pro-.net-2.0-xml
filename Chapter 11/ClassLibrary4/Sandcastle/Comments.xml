@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Calculator</name>
+    </assembly>
+    <members>
+        <member name="T:Calculator.SimpleCalculator">
+            <summary>
+            This is a class that represents
+            a simple mathematical calculator.
+            <para>
+            You can use it to add, subtract,
+            divide and multiply integers and
+            fractional numbers.
+            </para>
+            <list type="bullet">
+            <listheader>Supported Operations</listheader>
+            <item>Addition</item>
+            <item>Subtraction</item>
+            <item>Division</item>
+            <item>Multiplication</item>
+            </list>
+            </summary>
+            <remarks>
+            This class is developed on .NET 2.0
+            </remarks>
+        </member>
+        <member name="M:Calculator.SimpleCalculator.Add(System.Int32,System.Int32)">
+            <summary>
+            This method adds two integers.
+            </summary>
+            <param name="a">The first number</param>
+            <param name="b">The second number</param>
+            <returns>An integer representing addition of a and b</returns>
+            <permission cref="M:Calculator.SimpleCalculator.Add(System.Int32,System.Int32)">Public method</permission>
+            <seealso cref="M:Calculator.SimpleCalculator.Subtract(System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:Calculator.SimpleCalculator.Subtract(System.Int32,System.Int32)">
+            <summary>
+            This method subtracts two integers.
+            </summary>
+            <param name="a">The first number</param>
+            <param name="b">The second number</param>
+            <returns>A double representing subtraction of a and b</returns>
+            <permission cref="M:Calculator.SimpleCalculator.Subtract(System.Int32,System.Int32)">Public method</permission>
+            <seealso cref="M:Calculator.SimpleCalculator.Add(System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:Calculator.SimpleCalculator.Divide(System.Int32,System.Int32)">
+            <summary>
+            This method divides two integers.
+            </summary>
+            <param name="a">The first number</param>
+            <param name="b">The second number</param>
+            <returns>An integer representing result of division of a and b</returns>
+            <permission cref="M:Calculator.SimpleCalculator.Divide(System.Int32,System.Int32)">Public method</permission>
+            <seealso cref="M:Calculator.SimpleCalculator.Subtract(System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:Calculator.SimpleCalculator.Multiply(System.Int32,System.Int32)">
+            <summary>
+            This method multiplies two integers.
+            </summary>
+            <param name="a">The first number</param>
+            <param name="b">The second number</param>
+            <returns>An integer representing multiplication of a and b</returns>
+            <permission cref="M:Calculator.SimpleCalculator.Multiply(System.Int32,System.Int32)">Public method</permission>
+            <seealso cref="M:Calculator.SimpleCalculator.Subtract(System.Int32,System.Int32)"/>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,8 @@
+bin\Debug\ServiceHostConsole.exe.config
+bin\Debug\ServiceHostConsole.exe
+bin\Debug\ServiceHostConsole.pdb
+bin\Debug\EmployeeLibrary.dll
+bin\Debug\EmployeeLibrary.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ServiceHostConsole.exe
+obj\Debug\ServiceHostConsole.pdb

@@ -1,0 +1,8 @@
+bin\Debug\CalculatorHostConsole.exe.config
+bin\Debug\CalculatorHostConsole.exe
+bin\Debug\CalculatorHostConsole.pdb
+bin\Debug\CalculatorLibrary.dll
+bin\Debug\CalculatorLibrary.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CalculatorHostConsole.exe
+obj\Debug\CalculatorHostConsole.pdb

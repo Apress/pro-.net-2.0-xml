@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topics>
+  <topic id="R:Project" />
+  <topic id="N:Calculator" />
+  <topic id="T:Calculator.SimpleCalculator" />
+  <topic id="M:Calculator.SimpleCalculator.#ctor" />
+  <topic id="M:Calculator.SimpleCalculator.Add(System.Int32,System.Int32)" />
+  <topic id="M:Calculator.SimpleCalculator.Divide(System.Int32,System.Int32)" />
+  <topic id="M:Calculator.SimpleCalculator.Multiply(System.Int32,System.Int32)" />
+  <topic id="M:Calculator.SimpleCalculator.Subtract(System.Int32,System.Int32)" />
+</topics>

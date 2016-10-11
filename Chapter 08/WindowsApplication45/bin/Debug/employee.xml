@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EmployeeID>1</EmployeeID>
+  <FirstName>Nancy</FirstName>
+  <LastName>Davolio</LastName>
+  <HomePhone>(206) 555-9857</HomePhone>
+  <Notes>includes a BA in psychology from Colorado State University in 1970. She also completed "The Art of the Cold Call." Nancy is a member of Toastmasters International.</Notes>
+</Employee>

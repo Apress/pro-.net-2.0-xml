@@ -1,0 +1,10 @@
+bin\Debug\WindowsApplication65.exe
+bin\Debug\WindowsApplication65.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\WindowsApplication65.Form1.resources
+obj\Debug\WindowsApplication65.Properties.Resources.resources
+obj\Debug\WindowsApplication65.csproj.GenerateResource.Cache
+obj\Debug\WindowsApplication65.exe
+obj\Debug\WindowsApplication65.pdb
+bin\Debug\EmployeeServer.dll
+bin\Debug\EmployeeServer.pdb

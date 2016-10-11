@@ -1,0 +1,18 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Calculator.chm
+Contents file=Calculator.hhc
+Default topic=html/d4648875-d41a-783b-d5f4-638df39ee413.htm
+Display compile progress=No
+Index file=Calculator.hhk
+Language=0x409 English (United States)
+
+
+[FILES]
+icons\*.gif
+html\*.htm
+scripts\*.js
+styles\*.css
+
+[INFOTYPES]
+

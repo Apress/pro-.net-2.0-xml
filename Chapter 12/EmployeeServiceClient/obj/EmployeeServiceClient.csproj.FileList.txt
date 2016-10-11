@@ -1,0 +1,10 @@
+bin\Debug\EmployeeServiceClient.exe
+bin\Debug\EmployeeServiceClient.pdb
+bin\Debug\EmployeeLibrary.dll
+bin\Debug\EmployeeLibrary.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\EmployeeServiceClient.Form1.resources
+obj\Debug\EmployeeServiceClient.Properties.Resources.resources
+obj\Debug\EmployeeServiceClient.csproj.GenerateResource.Cache
+obj\Debug\EmployeeServiceClient.exe
+obj\Debug\EmployeeServiceClient.pdb
